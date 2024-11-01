@@ -1,7 +1,7 @@
-name: PluginTemplate
+name: Hats
 version: '1.0-SNAPSHOT'
-main: com.goottsy.PluginTemplate
+main: com.goottsy.Hats
 api-version: '1.19'
 authors: [ Goottsy ]
-description: Un plugin con muchas cosas de ...
+description: Un plugin con muchas cosas de Hats
 website: https://twitter.com/Goottsy

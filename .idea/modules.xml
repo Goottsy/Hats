@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PluginTemplate.iml" filepath="$PROJECT_DIR$/PluginTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hats.iml" filepath="$PROJECT_DIR$/Hats.iml" />
     </modules>
   </component>
 </project>

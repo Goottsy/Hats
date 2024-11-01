@@ -1,34 +1,48 @@
 package com.goottsy;
 
 import lombok.Data;
-import org.bukkit.*;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.entity.Player;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import static com.goottsy.Utils.Tools.legacyParse;
 
 @Data
 public class Game {
-    PluginTemplate instance;
+    private Hats instance;
     private FileConfiguration config;
 
-    //Class class;
 
-    public Game(PluginTemplate instance) {
+    public static String prefix;
+    public static String GUITitle;
+    public static String reload_message;
+    public static String command_no_player;
+    public static String reload_items;
+    public static String equip;
+
+
+    public Game(Hats instance) {
         this.instance = instance;
         this.config = instance.getConfig();
-
-        //varconfig = config.getBoolean("config");
-        //this.class = new Class(instance);
-
-
+        loadConfig();
     }
 
-    public boolean isStaff(Player player) {
-        return player.getScoreboardTags().contains("staff");
+    public void loadConfig() {
+        instance.reloadConfig();
+        config = instance.getConfig();
+
+        String msg = "messages.";
+        prefix = legacyParse(config.getString(msg+"prefix"));
+        GUITitle = legacyParse(config.getString(msg+"gui_title"));
+        reload_message = legacyParse(config.getString(msg+"reload"));
+        command_no_player = legacyParse(config.getString(msg+"command_no_player"));
+        reload_items = legacyParse(config.getString(msg+"reload_items"));
+        equip =legacyParse(config.getString(msg+"equip"));
     }
 
-    public boolean isPlayer(Player player) {
-        return player.getScoreboardTags().contains("player");
-    }
+
 
 
 }

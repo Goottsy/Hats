@@ -1,0 +1,18 @@
+messages:
+  prefix: "&b&lHats &8> &7"
+  gui_title: "&c&lHATS"
+  reload: "&aLa configuración ha sido recargada."
+  command_no_player: "&cEste comando solo puede ser ejecutado por un jugador."
+  reload_items: "&aSombreros Cargados:"
+  equip: "&aTe has equipado: "
+
+hats:
+  - id: "example_one"
+    name: "Example 01"
+    material: PAPER
+    cmd: 1
+  - id: "example_two"
+    name: "Example 02"
+    material: PAPER
+    cmd: 2
+

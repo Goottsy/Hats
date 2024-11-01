@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.goottsy</groupId>
-    <artifactId>PluginTemplate</artifactId>
+    <artifactId>Hats</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>PluginTemplate</name>
+    <name>Hats</name>
 
     <properties>
         <java.version>1.8</java.version>
@@ -17,7 +17,7 @@
     </properties>
 
     <build>
-        <finalName>PluginTemplate-1.0</finalName>
+        <finalName>Hats-1.0</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -37,11 +37,11 @@
                     <relocations>
                         <relocation>
                             <pattern>co.aikar.commands</pattern>
-                            <shadedPattern>PluginTemplate.acf</shadedPattern> <!-- Replace this -->
+                            <shadedPattern>Hats.acf</shadedPattern> <!-- Replace this -->
                         </relocation>
                         <relocation>
                             <pattern>co.aikar.locales</pattern>
-                            <shadedPattern>PluginTemplate.locales</shadedPattern> <!-- Replace this -->
+                            <shadedPattern>Hats.locales</shadedPattern> <!-- Replace this -->
                         </relocation>
                     </relocations>
                 </configuration>
